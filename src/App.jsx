@@ -7,12 +7,11 @@ function App() {
 
   return (
     <>
-<Routes classname="app">
+<Routes>
 <Route path="/" element={<Inicio />} />    
 <Route path="/marcador" element={<Sets3 />} />
 <Route path="/pruebas" element={<Pruebas />} />
-       
-    </Routes>
+</Routes>
     
     </>
   )
