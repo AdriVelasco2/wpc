@@ -9,9 +9,9 @@ function App() {
     <>
 <Router>
 <Routes>
-<Route path="/" element={<Inicio />} />    
+<Route path="/pruebas" element={<Inicio />} />    
 <Route path="/marcador" element={<Sets3 />} />
-<Route path="/pruebas" element={<Pruebas />} />
+<Route path="/" element={<Pruebas />} />
        
     </Routes>
     </Router>
