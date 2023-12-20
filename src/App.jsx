@@ -9,7 +9,7 @@ function App() {
     <>
 <Router>
 <Routes>
-<Route path="/inicio" element={<Inicio />} />    
+<Route path="/" element={<Inicio />} />    
 <Route path="/marcador" element={<Sets3 />} />
 <Route path="/pruebas" element={<Pruebas />} />
        
