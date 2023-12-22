@@ -233,27 +233,27 @@ const Pruebas = () => {
 <h1 className='text text-4xl p-2 col-span-2 grid content-center'> </h1>
 <h2 className='text text-9xl p-2 col-span-1 grid content-center justify-center'>{sets[sets2]} </h2>
 
-<div className='grid justify-center'>
-<button className=' text text-9xl grid content-start' onClick={sumarSets2}>+</button>  
-<button className='text text-9xl  ' onClick={restarSets2}>-</button>  
+<div className=' '>
+<button className=' text text-9xl grid content-start' onClick={sumarSets2}>🔼</button>  
+<button className='text text-9xl  ' onClick={restarSets2}>🔽</button>  
 </div>
 
 </div>  
 <div className='grid grid-cols-2'>
 <h1 className='text text-4xl p-2 col-span-2 grid content-center'>  </h1>
 <h2 className='text text-9xl p-2 col-span-1 grid content-center justify-center'> {juegos[juegos2]} </h2>
-<div className='grid justify-center'>
-<button className='text text-9xl grid content-start' onClick={sumarJuegos2}>+</button>
-<button className='text text-9xl grid content-start' onClick={restarJuegos2}>-</button>
+<div>
+<button className='text text-9xl grid content-start' onClick={sumarJuegos2}>🔼</button>
+<button className='text text-9xl grid content-start' onClick={restarJuegos2}>🔽</button>
 </div>
 </div>
 
 <div className='grid grid-cols-2'>
 <h1 className='text text-4xl p-2 col-span-2 grid content-center'>  </h1>
 <h2 className='text text-9xl col-span-1 grid content-center justify-center'> {puntos[puntos2]}</h2>
-<div className='grid justify-center'>
-<button className='text text-9xl grid content-start' onClick={sumarPuntos2}>+</button>
-<button className='text text-9xl grid content-start' onClick={restarPuntos2}>-</button>
+<div>
+<button className='text text-9xl grid content-start' onClick={sumarPuntos2}>🔼</button>
+<button className='text text-9xl grid content-start' onClick={restarPuntos2}>🔽</button>
 </div>
 
 
