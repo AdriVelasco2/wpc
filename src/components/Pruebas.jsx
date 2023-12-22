@@ -165,73 +165,93 @@ const Pruebas = () => {
   
 
   return (
-    <div className='grid  grid-cols-1'>
-      <div className='grid grid-cols-3 border-b-2'>
-      <div className='grid grid-flow-row '>
-        <label className='text text-2xl'>
-          <textarea
+    <div className='grid  grid-cols-1 '>
+      <div className='grid grid-cols-4  p-4 justify-evenly'>
+        <div className='grid content-center'>
+        <textarea
             type="text"
             value={pareja1}
             onChange={(e) => setPareja1(e.target.value)}
-            className="bg-black text-white p-2 rounded-md w-auto resize-none truncate"  
+            className="bg-black text-white p-2 rounded-md w-auto resize-none truncate text text-5xl col-span-2"  
             spellCheck="false"
-            />      
-            <h2 className='text text-2xl p-2'>Juegos: {juegos[juegos1]}</h2>
-            <h2 className='text text-2xl p-2'>Sets: {sets[sets1]}</h2>
-      
+            />     
+            </div>
+      <div className='grid grid-cols-2'>
 
-        </label>
+            <h1 className='text text-4xl p-2 col-span-2 grid content-center ml-8'>SETS</h1>
+            <h2 className='text text-9xl p-2 col-span-1 grid content-center justify-center'>{sets[sets1]} </h2>
+      
+            <div className='  grid justify-items-start  '>
+            <button className=' text text-9xl' onClick={sumarSets1}>🔼</button>  
+      <button className='text text-9xl  ' onClick={restarSets1}>🔽</button>  
       </div>
-      <div className='grid grid-rows-1'>
-      <h2 className='text text-8xl'> {puntos[puntos1]}</h2>
-      <div className='grid grid-cols-2 text text-9xl content-start'>
-      <button className='text text-start' onClick={sumarPuntos1}>+</button>
-      <button onClick={restarPuntos1}>-</button>
+
+      </div>  
+      <div className='grid grid-cols-2'>
+      <h1 className='text text-4xl p-2 col-span-2 grid content-center'>JUEGOS </h1>
+      <h2 className='text text-9xl p-2 col-span-1 grid content-center justify-center'> {juegos[juegos1]} </h2>
+    <div>
+      <button className='text text-9xl grid content-start' onClick={sumarJuegos1}>🔼</button>
+      <button className='text text-9xl grid content-start' onClick={restarJuegos1}>🔽</button>
+</div>
+</div>
+
+      <div className='grid grid-cols-2'>
+      <h1 className='text text-4xl p-2 col-span-2 grid content-center'>PUNTOS </h1>
+      <h2 className='text text-9xl col-span-1 grid content-center justify-center'> {puntos[puntos1]}</h2>
+      <div>
+      <button className='text text-9xl grid content-start' onClick={sumarPuntos1}>🔼</button>
+      <button className='text text-9xl grid content-start' onClick={restarPuntos1}>🔽</button>
       </div>
+     
       
       </div>
-      <div className='grid grid-col-1 space-x-1 '>
-        <p className='col-span-2 text text-center'>Botones para solo usar para corregir</p>
-      <button className='col-span-2 text text-2xl border-solid border-2 mb-2' onClick={sumarJuegos1}>Sumar Juegos</button>
-      <button className=' col-span-2 text text-2xl border-solid border-2' onClick={restarJuegos1}>Restar Juegos</button>
-      <button className=' text text-2xl border-solid border-2 mt-2 mb-2' onClick={sumarSets1}>Sumar Sets</button>  
-      <button className='text text-2xl border-solid border-2 mt-2 mb-2' onClick={restarSets1}>Restar Sets</button>  
-      </div>
+      
     </div>
-    <div className='grid grid-cols-3'>
-      <div className='grid grid-flow-row '>
-      <label className='text text-2xl'>          
+    <div className='grid grid-cols-4 border-t-2  justify-evenly'>
+        <div className='grid content-center'>
           <textarea
             type="text"
             value={pareja2}
             onChange={(e) => setPareja2(e.target.value)}
-            className="bg-black text-white p-2 rounded-md w-auto resize-none"  
+            className="bg-black text-white p-2 rounded-md w-auto resize-none truncate text text-5xl col-span-2"  
             spellCheck="false"
           />
-          <h2 className='text text-2xl p-2'>Juegos: {juegos[juegos2]}</h2>
-            <h2 className='text text-2xl p-2'>Sets: {sets[sets2]}</h2>
+ 
         
         
-        </label>
+        
       </div>
-      <div className='grid grid-rows-1'>
+      <div className='grid grid-cols-2'>
 
-      <h2 className='text text-8xl'>{puntos[puntos2]}</h2>
-      <div className='grid grid-cols-2 gap-4 text text-9xl'>
-      <button  className='text text-start' onClick={sumarPuntos2}>+</button>
-      <button onClick={restarPuntos2}>-</button>
-      </div>
+<h1 className='text text-4xl p-2 col-span-2 grid content-center'> </h1>
+<h2 className='text text-9xl p-2 col-span-1 grid content-center justify-center'>{sets[sets2]} </h2>
+
+<div className=' '>
+<button className=' text text-9xl grid content-start' onClick={sumarSets2}>🔼</button>  
+<button className='text text-9xl  ' onClick={restarSets2}>🔽</button>  
 </div>
-      <div className='grid grid-col-2 space-x-1'>
-      <p className='col-span-2 text text-center'>Botones para solo usar para corregir</p>
 
-      <button className=' col-span-2 text text-2xl border-solid border-2 ' onClick={sumarJuegos2}>Sumar Juegos</button>
-      <button className=' col-span-2 text text-2xl border-solid border-2 mt-2' onClick={restarJuegos2}>Restar Juegos</button>
+</div>  
+<div className='grid grid-cols-2'>
+<h1 className='text text-4xl p-2 col-span-2 grid content-center'>  </h1>
+<h2 className='text text-9xl p-2 col-span-1 grid content-center justify-center'> {juegos[juegos2]} </h2>
+<div>
+<button className='text text-9xl grid content-start' onClick={sumarJuegos2}>🔼</button>
+<button className='text text-9xl grid content-start' onClick={restarJuegos2}>🔽</button>
+</div>
+</div>
 
-      <button className='text text-2xl border-solid border-2 mt-2 ' onClick={sumarSets2}>Sumar Sets</button>
-      <button className='text text-2xl border-solid border-2 mt-2' onClick={restarSets2}>Restar Sets</button>
+<div className='grid grid-cols-2'>
+<h1 className='text text-4xl p-2 col-span-2 grid content-center'>  </h1>
+<h2 className='text text-9xl col-span-1 grid content-center justify-center'> {puntos[puntos2]}</h2>
+<div>
+<button className='text text-9xl grid content-start' onClick={sumarPuntos2}>🔼</button>
+<button className='text text-9xl grid content-start' onClick={restarPuntos2}>🔽</button>
+</div>
 
-      </div>
+
+</div>
       </div>
         {juegos1 === 6 && juegos2 === 6 && (
           <div>

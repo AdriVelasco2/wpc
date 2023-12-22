@@ -3,6 +3,7 @@ import foto1 from '../assets/1.jpg'
 import foto2 from '../assets/2.jpeg'
 import foto3 from '../assets/3.jpeg'
 import foto5 from '../assets/5.png'
+import iturcemi from '../assets/R.png'
 
 
 
@@ -14,6 +15,11 @@ const ImageBanner = () => {
     <div className=' flex gap-10 justify-center place-items-center'>
     <img
     src={foto5} // Reemplaza con la ruta de tu segunda imagen
+    alt="Imagen 2"
+    
+  />
+  <img
+    src={iturcemi} // Reemplaza con la ruta de tu segunda imagen
     alt="Imagen 2"
     
   />
