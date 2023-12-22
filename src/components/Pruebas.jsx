@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BannerTop from './BannerTop.jsx'
 
 const Pruebas = () => {
   const [pareja1, setPareja1] = useState('Pareja 1');
@@ -165,6 +166,8 @@ const Pruebas = () => {
   
 
   return (
+    <>
+    {/* <BannerTop/> */}
     <div className='grid  grid-cols-1 '>
       <div className='grid grid-cols-4  p-4 justify-evenly'>
         <div className='grid content-center'>
@@ -276,6 +279,7 @@ const Pruebas = () => {
         )}
       
     </div>
+    </>
   );
 };
 
