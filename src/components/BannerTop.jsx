@@ -31,32 +31,32 @@ const ImageBanner = () => {
   {/* Imagenes para el banner */}
     <div className='w-1/6 h-1/3 p-8  flex flex-nowrap gap-3 items-center  '>
       <img
-        src={foto2} // Reemplaza con la ruta de tu primera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu primera imagen
         alt="Imagen 1"
       />
        <img
-        src={foto2} // Reemplaza con la ruta de tu primera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu primera imagen
         alt="Imagen 1"
       />
        <img
-        src={foto2} // Reemplaza con la ruta de tu primera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu primera imagen
         alt="Imagen 1"
       />
        <img
-        src={foto2} // Reemplaza con la ruta de tu primera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu primera imagen
         alt="Imagen 1"
       />
      
       <img
-        src={foto2} // Reemplaza con la ruta de tu tercera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu tercera imagen
         alt="Imagen 3"
       />
        <img
-        src={foto2} // Reemplaza con la ruta de tu tercera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu tercera imagen
         alt="Imagen 3"
       />
        <img
-        src={foto2} // Reemplaza con la ruta de tu tercera imagen
+        src={iturcemi} // Reemplaza con la ruta de tu tercera imagen
         alt="Imagen 3"
       />
       
